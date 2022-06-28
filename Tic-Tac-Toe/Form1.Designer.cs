@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_TicTacToeGame));
             this.btn1 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
@@ -49,7 +50,10 @@
             // 
             // btn1
             // 
+            this.btn1.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn1.ForeColor = System.Drawing.Color.Black;
             this.btn1.Location = new System.Drawing.Point(25, 60);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(90, 90);
@@ -59,6 +63,8 @@
             // 
             // btn4
             // 
+            this.btn4.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn4.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn4.Location = new System.Drawing.Point(25, 166);
             this.btn4.Name = "btn4";
@@ -69,6 +75,8 @@
             // 
             // btn7
             // 
+            this.btn7.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn7.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn7.Location = new System.Drawing.Point(25, 270);
             this.btn7.Name = "btn7";
@@ -79,6 +87,8 @@
             // 
             // btn8
             // 
+            this.btn8.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn8.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn8.Location = new System.Drawing.Point(132, 270);
             this.btn8.Name = "btn8";
@@ -89,6 +99,8 @@
             // 
             // btn5
             // 
+            this.btn5.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn5.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn5.Location = new System.Drawing.Point(132, 166);
             this.btn5.Name = "btn5";
@@ -99,6 +111,8 @@
             // 
             // btn2
             // 
+            this.btn2.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn2.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn2.Location = new System.Drawing.Point(132, 60);
             this.btn2.Name = "btn2";
@@ -109,6 +123,8 @@
             // 
             // btn9
             // 
+            this.btn9.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn9.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn9.Location = new System.Drawing.Point(239, 270);
             this.btn9.Name = "btn9";
@@ -119,6 +135,8 @@
             // 
             // btn6
             // 
+            this.btn6.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn6.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn6.Location = new System.Drawing.Point(239, 166);
             this.btn6.Name = "btn6";
@@ -129,6 +147,8 @@
             // 
             // btn3
             // 
+            this.btn3.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_02_222849;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn3.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn3.Location = new System.Drawing.Point(239, 60);
             this.btn3.Name = "btn3";
@@ -139,6 +159,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MnStp_GameMenu,
             this.toolStripMenuItem1});
@@ -150,16 +171,20 @@
             // 
             // MnStp_GameMenu
             // 
+            this.MnStp_GameMenu.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Screenshot_2022_06_03_002807_removebg_preview;
             this.MnStp_GameMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MnStp_Restart,
             this.MnStp_Continue,
             this.MnStp_Exit});
+            this.MnStp_GameMenu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MnStp_GameMenu.ForeColor = System.Drawing.Color.White;
             this.MnStp_GameMenu.Name = "MnStp_GameMenu";
-            this.MnStp_GameMenu.Size = new System.Drawing.Size(84, 20);
+            this.MnStp_GameMenu.Size = new System.Drawing.Size(87, 20);
             this.MnStp_GameMenu.Text = "Game Menu";
             // 
             // MnStp_Restart
             // 
+            this.MnStp_Restart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.MnStp_Restart.Name = "MnStp_Restart";
             this.MnStp_Restart.Size = new System.Drawing.Size(180, 22);
             this.MnStp_Restart.Text = "Restart";
@@ -174,6 +199,7 @@
             // 
             // MnStp_Exit
             // 
+            this.MnStp_Exit.ForeColor = System.Drawing.Color.Red;
             this.MnStp_Exit.Name = "MnStp_Exit";
             this.MnStp_Exit.Size = new System.Drawing.Size(180, 22);
             this.MnStp_Exit.Text = "Exit";
@@ -181,16 +207,18 @@
             // 
             // toolStripMenuItem1
             // 
+            this.toolStripMenuItem1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.BackgroundImage")));
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
-            this.toolStripMenuItem1.Text = "?";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(30, 20);
+            this.toolStripMenuItem1.Text = " ? ";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -198,6 +226,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.tic_tac_toe_seamless_background_on_dark_blue_illustration_vector;
             this.ClientSize = new System.Drawing.Size(358, 389);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn6);
@@ -210,6 +240,7 @@
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form_TicTacToeGame";
             this.Text = "Tic Tac Toe Game";
             this.menuStrip1.ResumeLayout(false);

@@ -3,7 +3,6 @@ namespace Tic_Tac_Toe
     public partial class Form_TicTacToeGame : Form
     {
         char turn = 'X';
-        bool there_is_a_winner = true;
         int turn_count = 0;
 
         public Form_TicTacToeGame()
@@ -23,8 +22,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn1.Enabled = false;
             turn_count++;
+            btn1.Enabled = false;
 
             checkforWinner();
         }
@@ -41,8 +40,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn2.Enabled = false;
             turn_count++;
+            btn2.Enabled = false;
 
             checkforWinner();
         }
@@ -59,8 +58,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn3.Enabled = false;
             turn_count++;
+            btn3.Enabled = false;
 
             checkforWinner();
         }
@@ -77,8 +76,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn4.Enabled = false;
             turn_count++;
+            btn4.Enabled = false;
 
             checkforWinner();
         }
@@ -95,8 +94,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn5.Enabled = false;
             turn_count++;
+            btn5.Enabled = false;
 
             checkforWinner();
         }
@@ -113,8 +112,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn6.Enabled = false;
             turn_count++;
+            btn6.Enabled = false;
 
             checkforWinner();
         }
@@ -131,8 +130,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn7.Enabled = false;
             turn_count++;
+            btn7.Enabled = false;
 
             checkforWinner();
         }
@@ -149,8 +148,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn8.Enabled = false;
             turn_count++;
+            btn8.Enabled = false;
 
             checkforWinner();
         }
@@ -167,8 +166,8 @@ namespace Tic_Tac_Toe
                 turn = 'X';
             }
 
-            btn9.Enabled = false;
             turn_count++;
+            btn9.Enabled = false;
 
             checkforWinner();
         }
@@ -197,10 +196,10 @@ namespace Tic_Tac_Toe
             {
                 string winner = "";
 
-                if (turn == 'O')
-                    winner = "Player X";
-                else
+                if (turn == 'X')
                     winner = "Player O";
+                else
+                    winner = "Player X";
 
                 MessageBox.Show(winner + " Wins", "Congratulations!");
             }

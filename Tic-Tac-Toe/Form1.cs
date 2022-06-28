@@ -20,6 +20,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn1.Enabled = false;
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -33,6 +35,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn2.Enabled = false;
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -46,6 +50,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn3.Enabled = false;
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -59,6 +65,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn4.Enabled = false;
         }
 
         private void btn5_Click(object sender, EventArgs e)
@@ -72,6 +80,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn5.Enabled = false;
         }
 
         private void btn6_Click(object sender, EventArgs e)
@@ -85,6 +95,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn6.Enabled = false;
         }
 
         private void btn7_Click(object sender, EventArgs e)
@@ -98,6 +110,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn7.Enabled = false;
         }
 
         private void btn8_Click(object sender, EventArgs e)
@@ -111,6 +125,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn8.Enabled = false;
         }
 
         private void btn9_Click(object sender, EventArgs e)
@@ -124,6 +140,8 @@ namespace Tic_Tac_Toe
             {
                 turn = 'X';
             }
+
+            btn9.Enabled = false;
         }
     }
 }

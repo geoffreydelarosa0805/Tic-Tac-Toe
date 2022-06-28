@@ -1,6 +1,6 @@
 ﻿namespace Tic_Tac_Toe
 {
-    partial class Form1
+    partial class Form_TicTacToeGame
     {
         /// <summary>
         ///  Required designer variable.
@@ -37,6 +37,14 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MnStp_GameMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnStp_Restart = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnStp_Continue = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnStp_Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1
@@ -129,7 +137,64 @@
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
-            // Form1
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnStp_GameMenu,
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(358, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // MnStp_GameMenu
+            // 
+            this.MnStp_GameMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnStp_Restart,
+            this.MnStp_Continue,
+            this.MnStp_Exit});
+            this.MnStp_GameMenu.Name = "MnStp_GameMenu";
+            this.MnStp_GameMenu.Size = new System.Drawing.Size(84, 20);
+            this.MnStp_GameMenu.Text = "Game Menu";
+            // 
+            // MnStp_Restart
+            // 
+            this.MnStp_Restart.Name = "MnStp_Restart";
+            this.MnStp_Restart.Size = new System.Drawing.Size(180, 22);
+            this.MnStp_Restart.Text = "Restart";
+            this.MnStp_Restart.Click += new System.EventHandler(this.MnStp_Restart_Click);
+            // 
+            // MnStp_Continue
+            // 
+            this.MnStp_Continue.Name = "MnStp_Continue";
+            this.MnStp_Continue.Size = new System.Drawing.Size(180, 22);
+            this.MnStp_Continue.Text = "Continue";
+            this.MnStp_Continue.Click += new System.EventHandler(this.MnStp_Continue_Click);
+            // 
+            // MnStp_Exit
+            // 
+            this.MnStp_Exit.Name = "MnStp_Exit";
+            this.MnStp_Exit.Size = new System.Drawing.Size(180, 22);
+            this.MnStp_Exit.Text = "Exit";
+            this.MnStp_Exit.Click += new System.EventHandler(this.MnStp_Exit_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Text = "?";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // Form_TicTacToeGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,9 +208,14 @@
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form_TicTacToeGame";
+            this.Text = "Tic Tac Toe Game";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -160,5 +230,12 @@
         private Button btn9;
         private Button btn6;
         private Button btn3;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem MnStp_GameMenu;
+        private ToolStripMenuItem MnStp_Restart;
+        private ToolStripMenuItem MnStp_Continue;
+        private ToolStripMenuItem MnStp_Exit;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

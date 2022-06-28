@@ -1,12 +1,12 @@
 namespace Tic_Tac_Toe
 {
-    public partial class Form1 : Form
+    public partial class Form_TicTacToeGame : Form
     {
         char turn = 'X';
         bool there_is_a_winner = true;
         int turn_count = 0;
 
-        public Form1()
+        public Form_TicTacToeGame()
         {
             InitializeComponent();
         }
@@ -176,20 +176,26 @@ namespace Tic_Tac_Toe
         private void checkforWinner()
         {
             bool there_is_a_winner = false;
+           
             if ((btn1.Text == btn2.Text) && (btn2.Text == btn3.Text) && (!btn1.Enabled)) there_is_a_winner = true;
+            
             else if ((btn4.Text == btn5.Text) && (btn5.Text == btn6.Text) && (!btn4.Enabled)) there_is_a_winner = true;
+            
             else if ((btn7.Text == btn8.Text) && (btn8.Text == btn9.Text) && (!btn7.Enabled)) there_is_a_winner = true;
+            
             else if ((btn1.Text == btn4.Text) && (btn4.Text == btn7.Text) && (!btn1.Enabled)) there_is_a_winner = true;
+            
             else if ((btn2.Text == btn5.Text) && (btn5.Text == btn8.Text) && (!btn2.Enabled)) there_is_a_winner = true;
+            
             else if ((btn3.Text == btn6.Text) && (btn6.Text == btn9.Text) && (!btn3.Enabled)) there_is_a_winner = true;
+            
             else if ((btn1.Text == btn5.Text) && (btn5.Text == btn9.Text) && (!btn1.Enabled)) there_is_a_winner = true;
+            
             else if ((btn3.Text == btn5.Text) && (btn5.Text == btn7.Text) && (!btn3.Enabled)) there_is_a_winner = true;
 
             if (there_is_a_winner)
             {
                 string winner = "";
-
-                Text = turn.ToString();
 
                 if (turn == 'O')
                     winner = "Player X";
@@ -204,6 +210,39 @@ namespace Tic_Tac_Toe
                     MessageBox.Show(" It's A Draw! Try Another Round.", "WOW! What A Match!");
             }
         }
-    }
-    
+
+        private void MnStp_Restart_Click(object sender, EventArgs e)
+        {
+            turn_count = 0;
+
+            try
+            {
+                foreach (Control b in Controls)
+                {
+                    Button a = (Button)b;
+                    a.Enabled = true;
+                    a.Text = "";
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void MnStp_Continue_Click(object sender, EventArgs e)
+        {
+            MnStp_Continue.Select();
+        }
+
+        private void MnStp_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("It is a game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares.", "Tic Tac Toe Game");
+        }
+    } 
 }
